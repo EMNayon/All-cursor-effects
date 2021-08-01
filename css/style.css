@@ -1,17 +1,22 @@
 *{
     font-family: sans-serif;
 }
-
+.main{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 50px;
+}
 .sub-main{
     display: flex;
+    justify-content: space-between;
     text-align: center;
-    margin-left: 30px;
+   
 }
 h1 {
     text-align: center;
     color: purple;
 }
-.auto{
+.auto, .help, .wait, .text, .move, .e-resize, .nw-resize,.sw-resize,.ns-resize,.col-resize, .zoom-in, .grabbing{
     height: 100px;
     width: 170px;
     border: 1px solid black;
@@ -19,7 +24,7 @@ h1 {
     margin: 5px;
     cursor: auto;
 }
-.default{
+.default,.pointer, .cell, .vertical-text, .no-drop, .n-resize, .s-resize, .w-resize, .nesw-resize, .row-resize, .zoom-out, .context-menu{
     height: 100px;
     width: 170px;
     border: 1px solid black;
@@ -27,7 +32,7 @@ h1 {
     margin: 5px;
     cursor: default;
 }
-.none{
+.none, .progress, .crosshair, .alias, .not-allowed, .ne-resize, .se-resize, .ew-resize, .nwse-resize, .all-scroll, .grab{
     height: 100px;
     width: 170px;
     border: 1px solid black;
@@ -36,258 +41,114 @@ h1 {
     cursor: none;
 }
 .help{
-    height: 100px;
-    width: 170px;
-    border: 1px solid black;
-    background: papayawhip;
-    margin: 5px;
+    
     cursor: help;
 }
 .pointer{
-    height: 100px;
-    width: 170px;
-    border: 1px solid black;
-    background: orange;
-    margin: 5px;
     cursor: pointer;
 }
 .progress{
-    height: 100px;
-    width: 170px;
-    border: 1px solid black;
-    background: rebeccapurple;
-    margin: 5px;
     cursor: progress;
 }
 .wait{
-    height: 100px;
-    width: 170px;
-    border: 1px solid black;
-    background: papayawhip;
-    margin: 5px;
     cursor: wait;
 }
 .cell{
-    height: 100px;
-    width: 170px;
-    border: 1px solid black;
-    background: orange;
-    margin: 5px;
     cursor: cell;
 }
 .crosshair{
-    height: 100px;
-    width: 170px;
-    border: 1px solid black;
-    background: rebeccapurple;
-    margin: 5px;
     cursor: crosshair;
 }
 .text{
-    height: 100px;
-    width: 170px;
-    border: 1px solid black;
-    background: papayawhip;
-    margin: 5px;
     cursor: text;
 }
 .vertical-text{
-    height: 100px;
-    width: 170px;
-    border: 1px solid black;
-    background: orange;
-    margin: 5px;
     cursor: vertical-text;
 }
 .alias{
-    height: 100px;
-    width: 170px;
-    border: 1px solid black;
-    background: rebeccapurple;
-    margin: 5px;
     cursor: alias;
 }
 .move{
-    height: 100px;
-    width: 170px;
-    border: 1px solid black;
-    background: papayawhip;
-    margin: 5px;
     cursor: move;
 }
 .no-drop{
-    height: 100px;
-    width: 170px;
-    border: 1px solid black;
-    background: orange;
-    margin: 5px;
     cursor: no-drop;
 }
 .not-allowed{
-    height: 100px;
-    width: 170px;
-    border: 1px solid black;
-    background: rebeccapurple;
-    margin: 5px;
     cursor: not-allowed;
 }
 .e-resize{
-    height: 100px;
-    width: 170px;
-    border: 1px solid black;
-    background: papayawhip;
-    margin: 5px;
     cursor: e-resize;
 }
 .n-resize{
-    height: 100px;
-    width: 170px;
-    border: 1px solid black;
-    background: orange;
-    margin: 5px;
     cursor: n-resize;
 }
 .ne-resize{
-    height: 100px;
-    width: 170px;
-    border: 1px solid black;
-    background: rebeccapurple;
-    margin: 5px;
     cursor: ne-resize;
 }
 .nw-resize{
-    height: 100px;
-    width: 170px;
-    border: 1px solid black;
-    background: papayawhip;
-    margin: 5px;
     cursor: nw-resize;
 }
 .s-resize{
-    height: 100px;
-    width: 170px;
-    border: 1px solid black;
-    background: orange;
-    margin: 5px;
     cursor: s-resize;
 }
 .se-resize{
-    height: 100px;
-    width: 170px;
-    border: 1px solid black;
-    background: rebeccapurple;
-    margin: 5px;
     cursor: se-resize;
 }
 .sw-resize{
-    height: 100px;
-    width: 170px;
-    border: 1px solid black;
-    background: papayawhip;
-    margin: 5px;
     cursor: sw-resize;
 }
 .w-resize{
-    height: 100px;
-    width: 170px;
-    border: 1px solid black;
-    background: orange;
-    margin: 5px;
     cursor: w-resize;
 }
 .ew-resize{
-    height: 100px;
-    width: 170px;
-    border: 1px solid black;
-    background: rebeccapurple;
-    margin: 5px;
     cursor: ew-resize;
 }
 .ns-resize{
-    height: 100px;
-    width: 170px;
-    border: 1px solid black;
-    background: papayawhip;
-    margin: 5px;
     cursor: ns-resize;
 }
 .nesw-resize{
-    height: 100px;
-    width: 170px;
-    border: 1px solid black;
-    background: orange;
-    margin: 5px;
     cursor: nesw-resize;
 }
 .nwse-resize{
-    height: 100px;
-    width: 170px;
-    border: 1px solid black;
-    background: rebeccapurple;
-    margin: 5px;
     cursor: nwse-resize;
 }
 .col-resize{
-    height: 100px;
-    width: 170px;
-    border: 1px solid black;
-    background: papayawhip;
-    margin: 5px;
     cursor: col-resize;
 }
 .row-resize{
-    height: 100px;
-    width: 170px;
-    border: 1px solid black;
-    background: orange;
-    margin: 5px;
     cursor: row-resize;
 }
 .all-scroll{
-    height: 100px;
-    width: 170px;
-    border: 1px solid black;
-    background: rebeccapurple;
-    margin: 5px;
     cursor: all-scroll;
 }
 .zoom-in{
-    height: 100px;
-    width: 170px;
-    border: 1px solid black;
-    background: papayawhip;
-    margin: 5px;
     cursor: zoom-in;
 }
 .zoom-out{
-    height: 100px;
-    width: 170px;
-    border: 1px solid black;
-    background: orange;
-    margin: 5px;
     cursor: zoom-out;
 }
 .grab{
-    height: 100px;
-    width: 170px;
-    border: 1px solid black;
-    background: rebeccapurple;
-    margin: 5px;
     cursor: grab;
 }
 .grabbing{
-    height: 100px;
-    width: 170px;
-    border: 1px solid black;
-    background: papayawhip;
-    margin: 5px;
     cursor: grabbing;
 }
 .context-menu{
-    height: 100px;
-    width: 170px;
-    border: 1px solid black;
-    background: orange;
-    margin: 5px;
     cursor: context-menu;
+}
+
+@media screen and (max-width:480px) {
+    body{
+        width: 200px;
+        margin: 0 auto;
+    }
+    h1{
+        font-size: 20px;
+        width: 200px;
+
+    }
+    .sub-main{
+        display: block;
+    }  
 }
